@@ -37,7 +37,7 @@ pub fn read_numbers_from_file(filepath: &str) -> io::Result<(Vec<i32>, Vec<i32>)
 }
 
 pub fn calculate_total_distance() -> i32 {
-    let (list1, list2) = read_numbers_from_file("C:\\Users\\Tanir\\Documents\\input.txt").unwrap();
+    let (list1, list2) = read_numbers_from_file("Inputs/inputDay1.txt").unwrap();
     let sorted1 = sort_list(list1);
     let sorted2 = sort_list(list2);
 
@@ -49,7 +49,7 @@ pub fn calculate_total_distance() -> i32 {
 }
 
 pub fn calculate_total_similarity() -> i32 {
-    let (list1, list2) = read_numbers_from_file("C:\\Users\\Tanir\\Documents\\input.txt").unwrap();
+    let (list1, list2) = read_numbers_from_file("Inputs/inputDay1.txt").unwrap();
 
     list1.iter()
         .map(|&num| {
